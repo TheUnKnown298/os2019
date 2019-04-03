@@ -24,7 +24,7 @@
 													[    0.000000] Disabled fast string operations
 													[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
 
-													8. uptime 																19:06:13 up 27 min, 1 user load average: 0.04, 0.15, 0.26
+8. uptime 																19:06:13 up 27 min, 1 user load average: 0.04, 0.15, 0.26
 
 9. who am i 															*nothing*
 
