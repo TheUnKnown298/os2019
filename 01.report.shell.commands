@@ -1,0 +1,69 @@
+				command															output
+1. echo hello world															hello world
+
+2. passwd																Changing password for theunknown.
+																		(current) UNIX password:
+																		passwd: Authentication token manipulation error
+																		passwd: password unchanged
+
+3. date																	Tue Apr 2 19:04:20 PDT 2019
+
+4. hostname																ubuntu
+
+5. arch																	x86_64
+
+6. uname -a 															Linux ubuntu 4.18.0-10-generic #11-Ubuntu SMP Thu Oct 11 15:13:55 UTC 2018
+																		x86_64 x86_64 x86_64 GNU/Linux
+
+7. dmesg											[    0.000000] Linux version 4.18.0-10-generic (buildd@lgw01-amd64-060) (gcc version 8.2.0 (Ubuntu 8.2.0-7ubuntu1)) #11-Ubuntu SMP Thu Oct 11 15:13:55 UTC 2018 (Ubuntu 4.18.0-10.11-generic 4.18.12)
+													[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.18.0-10-generic root=UUID=95ceb835-aaa7-4bcb-af78-7071faafc1e6 ro find_preseed=/preseed.cfg auto noprompt priority=critical locale=en_US quiet
+													[    0.000000] KERNEL supported cpus:
+													[    0.000000]   Intel GenuineIntel
+													[    0.000000]   AMD AuthenticAMD
+													[    0.000000]   Centaur CentaurHauls
+													[    0.000000] Disabled fast string operations
+													[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+
+													8. uptime 																19:06:13 up 27 min, 1 user load average: 0.04, 0.15, 0.26
+
+9. who am i 															*nothing*
+
+10. whoami																theunknown
+
+11. who 																theunknown :0 2019-04-02 18:39 (:0)
+
+12. id 																	uid=1000(theunknown) gid=1000(theunknown) groups=1000(theunknown),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),118(lpadmin),129(sambashare)
+
+13. last																theunkno :0           :0               Tue Apr  2 18:39   still logged in
+																		reboot   system boot  4.18.0-10-generi Tue Apr  2 18:38   still running
+																		theunkno :0           :0               Tue Apr  2 12:45 - crash  (05:52)
+																		reboot   system boot  4.18.0-10-generi Tue Apr  2 12:42   still running
+
+																		wtmp begins Tue Apr  2 12:42:13 2019
+14. finger																Command 'finger' not found, but can be installed with
+																		sudo apt install finger
+																		
+15. w 																	19:07:01 up 28 min,  1 user,  load average: 0.10, 0.14, 0.26
+																		USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+																		theunkno :0       :0               18:39   ?xdm?  51.43s  0.02s /usr/lib/gdm3/g
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
