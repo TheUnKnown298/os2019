@@ -1,0 +1,18 @@
+- asdasd@ubuntu:~/Desktop/file/list$ ls | grep list
+  list.txt
+- asdasd@ubuntu:~/etc$ wc -w passwd
+  77 passwd
+- asdasd@ubuntu:~$ free
+              total        used        free      shared  buff/cache   available
+  Mem:        2017104      796604      542080        7036      678420     1052148
+  Swap:        969960           0      969960
+- asdasd@ubuntu:~$ lscpu
+  Architecture:        x86_64
+  CPU op-mode(s):      32-bit, 64-bit
+  Byte Order:          Little Endian
+  CPU(s):              1
+  On-line CPU(s) list: 0
+  Thread(s) per core:  1
+  Core(s) per socket:  1
+  Socket(s):           1
+- asdasd@ubuntu:~$ find -name *.jpg

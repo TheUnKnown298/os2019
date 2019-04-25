@@ -1,0 +1,32 @@
+- asdasd@ubuntu:~$ps -aux | less
+ USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ root          1  0.1  0.4 131228  9084 ?        Ss   19:02   0:03 /sbin/init au
+ to noprompt
+ root          2  0.0  0.0      0     0 ?        S    19:02   0:00 [kthreadd]
+ root          3  0.0  0.0      0     0 ?        I<   19:02   0:00 [rcu_gp]
+ root          4  0.0  0.0      0     0 ?        I<   19:02   0:00 [rcu_par_gp]
+ root          6  0.0  0.0      0     0 ?        I<   19:02   0:00 [kworker/0:0H
+ -kblockd]
+ root          8  0.0  0.0      0     0 ?        I<   19:02   0:00 [mm_percpu_wq
+ ]
+- asdasd@ubuntu:~$gcalccmd
+ > 2+2
+ 4
+- asdasd@ubuntu:~$ ps aux | grep gnome-calculator
+ asdasd     4213  1.7  2.7 771588 54940 pts/0    Sl+  20:29   0:01 gnome-calculator
+ asdasd     4350  0.0  0.0  17480   896 pts/1    S+   20:31   0:00 grep --color=auto gnome-calculator
+- asdasd@ubuntu:~$ ls /proc/4213
+ attr             exe        mounts         projid_map    status
+ autogroup        fd         mountstats     root          syscall
+ auxv             fdinfo     net            sched         task
+ cgroup           gid_map    ns             schedstat     timers
+ clear_refs       io         numa_maps      sessionid     timerslack_ns
+ cmdline          limits     oom_adj        setgroups     uid_map
+ comm             loginuid   oom_score      smaps         wchan
+ coredump_filter  map_files  oom_score_adj  smaps_rollup
+ cpuset           maps       pagemap        stack
+ cwd              mem        patch_state    stat
+ environ          mountinfo  personality    statm
+-  kill -SIGSTOP 4213
+-  kill -SIGCONT 4213
+-  kill -SIGKILL 4213
