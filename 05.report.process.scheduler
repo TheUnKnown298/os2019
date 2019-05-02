@@ -1,0 +1,71 @@
+- asdasd@ubuntu:~$ cat /proc/sched_debug
+		Sched Debug Version: v0.11, 4.18.0-10-generic #11-Ubuntu
+		ktime                                   : 922424.719250
+		sched_clk                               : 925500.869599
+		cpu_clk                                 : 922417.985293
+		jiffies                                 : 4295122902
+		sched_clock_stable()                    : 1
+
+		sysctl_sched
+		  .sysctl_sched_latency                    : 6.000000
+		  .sysctl_sched_min_granularity            : 0.750000
+		  .sysctl_sched_wakeup_granularity         : 1.000000
+		  .sysctl_sched_child_runs_first           : 0
+		  .sysctl_sched_features                   : 4118331
+		  .sysctl_sched_tunable_scaling            : 1 (logaritmic)
+
+		cpu#0, 2601.000 MHz
+		  .nr_running                    : 1
+		  .load                          : 1048576
+		  .nr_switches                   : 416309
+		  .nr_load_updates               : 141390
+		  .nr_uninterruptible            : 0
+		  .next_balance                  : 4294.892296
+		  .curr->pid                     : 2725
+		  .clock                         : 922426.586768
+		  .clock_task                    : 922426.586768
+		  .cpu_load[0]                   : 1346
+		  .cpu_load[1]                   : 1361
+		  .cpu_load[2]                   : 905
+		  .cpu_load[3]                   : 515
+		  .cpu_load[4]                   : 274
+		  .avg_idle                      : 1000000
+		  .max_idle_balance_cost         : 500000
+
+		cfs_rq[0]:/autogroup-27
+		  .exec_clock                    : 0.000000
+		  .MIN_vruntime                  : 0.000001
+	  .min_vruntime                  : 1845.434542
+	  .max_vruntime                  : 0.000001
+	  .spread                        : 0.000000
+	  .spread0                       : -427699.326496
+- asdasd@ubuntu:~$ cat /proc/4/sched
+	rcu_par_gp (4, #threads: 1)
+	-------------------------------------------------------------------
+	se.exec_start                                :           149.927453
+	se.vruntime                                  :            16.156246
+	se.sum_exec_runtime                          :             0.006995
+	se.nr_migrations                             :                    0
+	nr_switches                                  :                    3
+	nr_voluntary_switches                        :                    2
+	nr_involuntary_switches                      :                    1
+	se.load.weight                               :             90891264
+	se.runnable_weight                           :             90891264
+	se.avg.load_sum                              :                47718
+	se.avg.runnable_load_sum                     :                47718
+	se.avg.util_sum                              :              3031168
+	se.avg.load_avg                              :                88751
+	se.avg.runnable_load_avg                     :                88751
+	se.avg.util_avg                              :                   64
+	se.avg.last_update_time                      :            149926912
+	se.avg.util_est.ewma                         :                   16
+	se.avg.util_est.enqueued                     :                   65
+	policy                                       :                    0
+	prio                                         :                  100
+	clock-delta                                  :                   29
+	numa_pages_migrated                          :                    0
+	numa_preferred_nid                           :                   -1
+	total_numa_faults                            :                    0
+	current_node=0, numa_group_id=0
+	numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+
