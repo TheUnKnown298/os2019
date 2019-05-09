@@ -1,0 +1,5 @@
+ *asdasd@ubuntu:~$ pgrep firefox
+	2924
+	asdasd@ubuntu:~$ ps -o nlwp 2924
+	NLWP
+	51
